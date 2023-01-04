@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles/nav.css">
+    <style>
+        label{
+            display: block;
+            margin-bottom: 10px;
+        }
+        .field{
+            width: 150px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href=""> Home </a></li>
+                <li><a href="https://www.google.com/"> Google </a></li>                
+                <li><a href="form.html"> Form </a></li>
+                <li><a href="semantic.html"> Semantic </a></li> 
+                <li><a href="index.html"> Table </a></li>
+                <li><a href="audio-video.html">Media</a></li>
+            </ul>
+                       
+        </nav>
+    </header>
+
+    <h3>Welcome to my Pitha Ghor Form</h3>
+    <form>
+        <label for="name"> Your Name:
+            <input id="name" type="text" placeholder="Your Name">
+        </label>
+        <label for="email"> Your Email:
+            <input id="email" type="email" placeholder="Your Email">
+        </label>
+        <label for="phone"> Your Phone Number:
+            <input id="phone" type="number" placeholder="Your phone number">
+        </label>
+
+
+<!-- Pitha Category -->
+
+        <fieldset class="field">
+            <legend>Pick one Pitha</legend>
+            <label for="chitoy">
+                <input type="radio" name="pitha" id="chitoy">
+                Chitoy
+            </label>
+            <label for="vapa">
+                <input type="radio" name="pitha" id="vapa">
+                Vapa
+            </label>
+            <label for="payesh">
+                <input type="radio" name="pitha" id="payesh"> 
+                Payesh
+            </label>
+        </fieldset >
+
+
+<!-- Vorta category -->
+
+        <fieldset class="field">
+            <legend>Pick one Vhorta</legend>
+            <label for="Sorisha">
+                <input type="checkbox" name="vorta" id="sorisha">
+                Sorisha
+            </label>
+            <label for="Sotki">
+                <input type="checkbox" name="vorta" id="Sotki">
+                Sotki
+            </label>
+            <label for="Aloo">
+                <input type="checkbox" name="vorta" id="aloo">
+                Aloo
+            </label>
+        </fieldset>
+
+
+
+        <fieldset class="field">
+            <legend> Special Instruction</legend>
+            <textarea name="" id="" cols="10" rows="4"></textarea>
+        </fieldset>
+        <input type="reset" value="reset">
+        <input type="submit" value="Submit">
+
+    </form>
+</body>
+</html>
